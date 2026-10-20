@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Wholesale Contact | VOC Global</title>
+  </head>
+  <body class="contact-page">
+    <header class="header header--blur">
+      <nav>
+        <div class="nav__header">
+          <div class="nav__logo">
+            <a href="index.html" aria-label="VOC Global home">
+              <img
+                src="assets/VOC_logo.png"
+                alt="VOC Global"
+                class="nav__logo-dark"
+              />
+              <img
+                src="assets/VOC_logo.png"
+                alt="VOC Global"
+                class="nav__logo-white"
+              />
+            </a>
+          </div>
+          <div class="nav__menu__btn" id="menu-btn">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+        <ul class="nav__links" id="nav-links">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="ground-spices.html">GROUND SPICES</a></li>
+          <li><a href="whole-dried.html">WHOLE & DRIED</a></li>
+          <li><a href="contact-us.html" aria-current="page">CONTACT US</a></li>
+          <li><a href="about-us.html">ABOUT US</a></li>
+          <li><a href="login.html">LOGIN</a></li>
+          <button class="add-chart" data-cart-toggle aria-label="Open cart">
+            CART
+            <i class="fa fa-cart-plus" id="cart-icon"></i>
+            <span class="cart-count" data-cart-count aria-live="polite">0</span>
+          </button>
+        </ul>
+      </nav>
+
+      <div class="cart" id="cart" aria-hidden="true">
+        <div class="cart-heading">
+          <div class="cart-title">Cart Items</div>
+          <button class="cart-close" type="button" aria-label="Close cart">
+            <i class="fa fa-times"></i>
+          </button>
+        </div>
+        <div class="cart-content" aria-live="polite"></div>
+        <div class="total">
+          <div class="total-title">Total</div>
+          <div class="total-price">₩0</div>
+        </div>
+        <p class="cart-policy">
+          Minimum order: 25 KG per product. For orders above 1,000 kg, please
+          contact our export team for a customized quotation.
+        </p>
+        <button class="btn-buy" type="button">CHECK OUT</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="wholesale-hero">
+        <div class="wholesale-hero__content">
+          <p class="wholesale-eyebrow">WHOLESALE & EXPORT</p>
+          <h1>LET'S GROW<br /><span>GOOD BUSINESS.</span></h1>
+          <p>
+            Tell us what your business needs. Our team will help you source
+            Indonesian spices for your next order.
+          </p>
+          <a class="btn" href="#wholesale-request">REQUEST A BULK QUOTE</a>
+        </div>
+      </section>
+
+      <section class="section__container wholesale-contact" id="wholesale-request">
+        <div class="wholesale-contact__intro">
+          <p class="wholesale-eyebrow">PARTNER WITH VOC GLOBAL</p>
+          <h2>LET'S TALK WHOLESALE</h2>
+          <p>
+            Share your product and quantity requirements using the form. We
+            supply Indonesian spices to food businesses, retailers,
+            distributors, and export partners.
+          </p>
+          <div class="wholesale-contact__notes">
+            <article>
+              <span><i class="ri-scales-3-line"></i></span>
+              <div>
+                <h3>Minimum order</h3>
+                <p>25 kg per product. Quantities must be in 25 kg increments.</p>
+              </div>
+            </article>
+            <article>
+              <span><i class="ri-ship-line"></i></span>
+              <div>
+                <h3>Large orders</h3>
+                <p>
+                  For orders above 1,000 kg, request a customized export
+                  quotation.
+                </p>
+              </div>
+            </article>
+            <article>
+              <span><i class="ri-mail-line"></i></span>
+              <div>
+                <h3>Prefer email?</h3>
+                <p><a href="mailto:VOC_Global@gmail.com">VOC_Global@gmail.com</a></p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <form class="wholesale-form" action="/" method="get">
+          <h2>REQUEST A BULK QUOTE</h2>
+          <p>Fields marked with * are required.</p>
+          <label for="wholesale-name">Your name *</label>
+          <input
+            id="wholesale-name"
+            name="name"
+            type="text"
+            autocomplete="name"
+            placeholder="Your full name"
+            required
+          />
+
+          <label for="wholesale-contact">Email or KakaoTalk ID *</label>
+          <input
+            id="wholesale-contact"
+            name="contact"
+            type="text"
+            placeholder="How can we reach you?"
+            required
+          />
+
+          <div class="wholesale-form__row">
+            <div>
+              <label for="wholesale-product">Product *</label>
+              <select id="wholesale-product" name="product" required>
+                <option value="" disabled selected>Select a product</option>
+                <option value="black-pepper">Black Pepper</option>
+                <option value="ginger">Ginger</option>
+                <option value="turmeric">Turmeric</option>
+                <option value="cinnamon">Cinnamon</option>
+                <option value="nutmeg">Nutmeg</option>
+                <option value="cloves">Cloves</option>
+                <option value="vanilla">Vanilla</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div>
+              <label for="wholesale-quantity">Quantity (KG) *</label>
+              <input
+                id="wholesale-quantity"
+                name="quantity_kg"
+                type="number"
+                min="25"
+                step="25"
+                placeholder="Minimum 25 KG"
+                required
+              />
+            </div>
+          </div>
+
+          <label for="wholesale-business">Business type *</label>
+          <select id="wholesale-business" name="business_type" required>
+            <option value="" disabled selected>Select your business type</option>
+            <option value="restaurant">Restaurant / Food Service</option>
+            <option value="retailer">Retailer</option>
+            <option value="distributor">Distributor</option>
+            <option value="export">Export</option>
+            <option value="other">Other</option>
+          </select>
+
+          <label for="wholesale-message">Additional details</label>
+          <textarea
+            id="wholesale-message"
+            name="message"
+            rows="4"
+            placeholder="Share your destination, packaging needs, or questions."
+          ></textarea>
+
+          <button class="btn" type="submit">SEND QUOTE REQUEST</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="section__container footer__container">
+        <div class="footer__logo">
+          <img src="assets/VOC_logo.png" alt="VOC Global" />
+        </div>
+        <div class="footer__content">
+          <p>
+            Welcome to VOC Global, your trusted source for premium spices from
+            Indonesia. We carefully select and deliver pepper, ginger,
+            turmeric, cinnamon, and other natural ingredients for businesses
+            that value authentic flavor and dependable quality.
+          </p>
+          <div>
+            <ul class="footer__links">
+              <li>
+                <span><i class="ri-map-pin-2-fill"></i></span>
+                Jakarta, Indonesia, 500089
+              </li>
+              <li>
+                <span><i class="ri-mail-fill"></i></span>
+                <a href="mailto:VOC_Global@gmail.com">VOC_Global@gmail.com</a>
+              </li>
+            </ul>
+            <div class="footer__socials">
+              <a href="#" aria-label="Facebook"><i class="ri-facebook-circle-fill"></i></a>
+              <a href="#" aria-label="Instagram"><i class="ri-instagram-fill"></i></a>
+              <a href="#" aria-label="Twitter"><i class="ri-twitter-fill"></i></a>
+              <a href="#" aria-label="WhatsApp"><i class="ri-whatsapp-fill"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2026 VOC Global All rights reserved.
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

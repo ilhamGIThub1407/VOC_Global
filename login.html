@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Login | VOC Global</title>
+  </head>
+  <body class="login-page">
+    <header class="login-topbar">
+      <a href="index.html" aria-label="VOC Global home">
+        <img src="assets/VOC_logo.png" alt="VOC Global" />
+      </a>
+    </header>
+    <main class="login-main">
+      <section class="login-card" aria-labelledby="login-title">
+        <div class="login-intro">
+          <p class="login-eyebrow">VOC GLOBAL · INDONESIAN SPICES</p>
+          <h1>Good spices.<br />Good business.</h1>
+          <p>
+            Sign in to continue exploring premium spices, carefully sourced
+            from Indonesia.
+          </p>
+        </div>
+        <div class="login-form-panel">
+          <h2 id="login-title">Welcome back</h2>
+          <p class="login-subtitle">Enter your account details to sign in.</p>
+          <form class="login-form" id="login-form">
+            <div class="login-field">
+              <label for="login-email">Email address</label>
+              <input
+                id="login-email"
+                name="email"
+                type="email"
+                autocomplete="username"
+                placeholder="you@example.com"
+                required
+              />
+            </div>
+            <div class="login-field">
+              <label for="login-password">Password</label>
+              <div class="login-password">
+                <input
+                  id="login-password"
+                  name="password"
+                  type="password"
+                  autocomplete="current-password"
+                  placeholder="Enter your password"
+                  required
+                />
+                <button type="button" id="toggle-password" aria-pressed="false">
+                  SHOW
+                </button>
+              </div>
+            </div>
+            <div class="login-options">
+              <label class="login-remember">
+                <input type="checkbox" name="remember" />
+                Remember me
+              </label>
+              <a href="mailto:VOC_Global@gmail.com?subject=Password%20help">
+                Forgot password?
+              </a>
+            </div>
+            <button class="login-submit" type="submit">SIGN IN</button>
+            <p class="login-status" id="login-status" role="status" aria-live="polite"></p>
+          </form>
+          <a class="login-back" href="index.html">← Back to home</a>
+        </div>
+      </section>
+    </main>
+    <script>
+      const passwordInput = document.getElementById("login-password");
+      const togglePassword = document.getElementById("toggle-password");
+      const loginForm = document.getElementById("login-form");
+      const loginStatus = document.getElementById("login-status");
+
+      togglePassword.addEventListener("click", () => {
+        const showPassword = passwordInput.type === "password";
+        passwordInput.type = showPassword ? "text" : "password";
+        togglePassword.textContent = showPassword ? "HIDE" : "SHOW";
+        togglePassword.setAttribute("aria-pressed", String(showPassword));
+      });
+
+      loginForm.addEventListener("submit", (event) => {
+        event.preventDefault();
+        loginStatus.textContent =
+          "Login is not connected yet. Please contact VOC Global to access your account.";
+      });
+    </script>
+  </body>
+</html>

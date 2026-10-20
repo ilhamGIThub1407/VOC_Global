@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>VOC Global</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav>
+        <div class="nav__header">
+          <div class="nav__logo">
+            <a href="index.html">
+              <img
+                src="assets/VOC_logo.png"
+                alt="logo"
+                class="nav__logo-dark"
+              />
+              <img
+                src="assets/VOC_logo.png"
+                alt="logo"
+                class="nav__logo-white"
+              />
+            </a>
+          </div>
+          <div class="nav__menu__btn" id="menu-btn">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+        <ul class="nav__links" id="nav-links">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="ground-spices.html">GROUND SPICES</a></li>
+          <li><a href="whole-dried.html">WHOLE & DRIED</a></li>
+          <li><a href="contact-us.html" aria-current="page">CONTACT US</a></li>
+          <li><a href="about-us.html">ABOUT US</a></li>
+          <li><a href="login.html">LOGIN</a></li>
+          <button class="add-chart" data-cart-toggle aria-label="Open cart">
+            CART
+            <i class="fa fa-cart-plus" id="cart-icon"></i>
+            <span class="cart-count" data-cart-count aria-live="polite">0</span>
+          </button>
+        </ul>
+      </nav>
+      <div class="section__container header__container" id="home">
+        <div class="header__content">
+          <h2>IT IS GOOD TIME FOR THE GREATE TASTE OF SPICES</h2>
+          <h1>SPICE<br /><span>SEASON</span></h1>
+        </div>
+      </div>
+    </header>
+
+    <section class="section__container banner__container" id="special">
+      <div class="banner__card">
+        <video
+          class="banner__video"
+          autoplay
+          muted
+          loop
+          playsinline
+          poster="assets/banner-1.png"
+        >
+          <source
+            src="assets/Video_content/pepper_banner1.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <p>AVAILABLE NOW</p>
+        <h4>OUR BEST-SELLING PEPPER</h4>
+      </div>
+      <div class="banner__card">
+        <p>AVAILABLE NOW</p>
+        <h4>MIX YOUR<br />OWN BLEND</h4>
+      </div>
+      <div class="banner__card">
+        <p>AVAILABLE NOW</p>
+        <h4>FRESH & CHILI</h4>
+      </div>
+    </section>
+
+    <section class="section__container order__container" id="menu">
+      <h3>PREMIUM INDONESIAN SPICES</h3>
+      <h2 class="section__header">EXPLORE OUR PRODUCTS</h2>
+      <p class="section__description">
+        Discover carefully selected spices with rich aroma, bold flavor, and
+        dependable quality. From whole peppercorns to fresh ginger and fragrant
+        cinnamon, VOC Global brings authentic Indonesian ingredients to your
+        kitchen and business.
+      </p>
+      <div class="order__grid">
+        <div class="order__card">
+          <img src="assets/black_pepper_order.png" alt="order" />
+          <h4>Black Pepper</h4>
+          <p>
+            Bold, aromatic, and naturally warming black peppercorns selected for
+            a rich taste in cooking, seasoning, and spice blends.
+          </p>
+          <a class="btn" href="black-pepper-detail.html">VIEW PRODUCT</a>
+        </div>
+        <div class="order__card">
+          <img src="assets/ginger_order2.png" alt="order" />
+          <h4>Ginger</h4>
+          <p>
+            Fragrant ginger with a bright, warming character, ideal for drinks,
+            sauces, traditional recipes, and everyday cooking.
+          </p>
+          <a class="btn" href="ginger-detail.html">VIEW PRODUCT</a>
+        </div>
+        <div class="order__card">
+          <img src="assets/cinnamon_order3.png" alt="order" />
+          <h4>Cinnamon</h4>
+          <p>
+            Warm and naturally sweet cinnamon with a distinctive aroma for
+            desserts, beverages, savory dishes, and spice blends.
+          </p>
+          <a class="btn" href="cinnamon-detail.html">VIEW PRODUCT</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container event__container" id="event">
+      <div class="event__content">
+        <div class="event__image">
+          <img src="assets/spices_event.jpg" alt="event" />
+        </div>
+        <div class="event__details">
+          <h3>Discover</h3>
+          <h2 class="section__header">FRESH HARVEST ARRIVALS</h2>
+          <p class="section__description">
+            Every batch we sell is tracked from the day it arrives to the day
+            it's sold,so what you get is always the freshest available, never
+            old stock sitting on a shelf. From new harvest pepper straight from
+            Lampung to freshly ground turmeric and cinnamon, there's always
+            something new coming in. Be the first to know when a fresh batch
+            lands, and stock up before it's gone.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="reservation" id="wholesale">
+      <div class="section__container reservation__container">
+        <h3>WHOLESALE</h3>
+        <h2 class="section__header">REQUEST A BULK QUOTE</h2>
+        <p class="wholesale-policy">
+          <strong>Minimum Order: 25 KG.</strong> For orders above 1,000 kg,
+          please contact our export team for a customized quotation.
+        </p>
+        <form action="/">
+          <input type="text" placeholder="NAME" required />
+          <input type="text" placeholder="EMAIL / KAKAOTALK" required />
+
+          <select required>
+            <option value="" disabled selected>PRODUCT</option>
+            <option value="black-pepper">Black Pepper</option>
+            <option value="turmeric">Turmeric</option>
+            <option value="ginger">Ginger</option>
+            <option value="cinnamon">Cinnamon</option>
+          </select>
+
+          <input
+            type="number"
+            placeholder="QUANTITY (KG, MIN 25)"
+            min="25"
+            step="25"
+            required
+          />
+
+          <select required>
+            <option value="" disabled selected>BUSINESS TYPE</option>
+            <option value="restaurant">Restaurant</option>
+            <option value="retailer">Retailer</option>
+            <option value="distributor">Distributor</option>
+            <option value="export">Export</option>
+          </select>
+
+          <button class="btn" type="submit">GET A QUOTE</button>
+        </form>
+      </div>
+      <img
+        src="assets/black_pepper__bg_whosale1.png"
+        alt="sacks of bulk spices"
+        class="reservation__bg-1"
+      />
+      <img
+        src="assets/cinnamon_bg_wholesale2.png"
+        alt="sacks of bulk spices"
+        class="reservation__bg-2"
+      />
+    </section>
+
+    <footer class="footer">
+      <div class="section__container footer__container">
+        <div class="footer__logo">
+          <img src="assets/VOC_logo.png" alt="logo" />
+        </div>
+        <div class="footer__content">
+          <p>
+            Welcome to VOC Global, your trusted source for premium spices from
+            Indonesia. We carefully select, process, and deliver fresh pepper,
+            ginger, turmeric, cinnamon, and other natural ingredients for
+            businesses that value authentic flavor and consistent quality.
+          </p>
+          <div>
+            <ul class="footer__links">
+              <li>
+                <span><i class="ri-map-pin-2-fill"></i></span>
+                Jakarta, Indonesia, 500089
+              </li>
+              <li>
+                <span><i class="ri-mail-fill"></i></span>
+                VOC_Global@gmail.com
+              </li>
+            </ul>
+            <div class="footer__socials">
+              <a href="#"><i class="ri-facebook-circle-fill"></i></a>
+              <a href="#"><i class="ri-instagram-fill"></i></a>
+              <a href="#"><i class="ri-twitter-fill"></i></a>
+              <a href="#"><i class="ri-whatsapp-fill"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2026 VOC Global All rights reserved.
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
