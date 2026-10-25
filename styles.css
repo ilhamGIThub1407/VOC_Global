@@ -167,7 +167,7 @@ nav {
 
 .nav__links a:hover,
 .nav__links a[aria-current="page"] {
-  color: var(--secondary-color);
+  color: #ffffff;
 }
 
 .header__container {
